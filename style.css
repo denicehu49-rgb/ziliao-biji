@@ -19,10 +19,14 @@ figure { margin: 10px 0 14px; break-inside: avoid; page-break-inside: avoid; }
 img { display: block; width: auto; max-width: 100%; height: auto; }
 figcaption { margin-top: 8px; font-size: 18px; }
 .chapter { margin: 0 0 28px; padding-top: 8px; border-top: 1px solid #ddd; }
+.branch { margin: 0 0 18px; padding: 0 0 2px 14px; border-left: 3px solid #222; }
+.branch h3 { margin: 0 0 8px; font-size: 22px; }
+.leaf { margin: 0 0 8px; font-size: 18px; }
+.leaf a { color: #1a1a1a; }
 @media print {
   body { max-width: none; padding: 0; font-size: 12pt; }
   h1 { font-size: 18pt; }
-  h2, .node-title { font-size: 15pt; }
-  .lead, .line, figcaption, .jump th, .jump td, nav a { font-size: 12pt; }
+  h2, .node-title, .branch h3 { font-size: 15pt; }
+  .lead, .line, .leaf, figcaption, .jump th, .jump td, nav a { font-size: 12pt; }
   nav { display: none; }
 }
